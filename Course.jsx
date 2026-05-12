@@ -1,4 +1,5 @@
 
+import PropTypes from 'prop-types'
 function Course(props)
 {
 
@@ -12,5 +13,11 @@ function Course(props)
     <h2>{props.rating}</h2>
         </div>
     )
+}
+Course.propTypes = {
+  name:PropTypes.string,
+  price:PropTypes.string,
+  show:PropTypes.bool
+
 }
 export default Course
